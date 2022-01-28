@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBAction func buttonAction(_ sender: Any) {
         let firstName = txtFirstName.text ?? ""
         let lastName = txtLastName.text ?? ""
-        lblName.text = "Hello " + firstName + " " + lastName
+        lblName.text = "Hello " + firstName + ", " + lastName
     }
     
 }
