@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Z9B-aS-Bxu">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="300" id="ZdG-ds-9py" customClass="TableViewCell" customModule="Assignment2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZdG-ds-9py" id="Nn9-rV-3ls">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appleJuice" translatesAutoresizingMaskIntoConstraints="NO" id="zbk-bk-Oi5">
+                                                    <rect key="frame" x="5" y="5" width="404" height="225"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="300" id="LAa-dm-Z4K"/>
+                                                        <constraint firstAttribute="width" constant="400" id="tQb-1O-2Xu"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple Juice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7t-Zr-tdQ">
+                                                    <rect key="frame" x="5" y="250" width="404" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="3VC-pU-aeJ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="zbk-bk-Oi5" secondAttribute="trailing" constant="5" id="2ck-by-fqL"/>
+                                                <constraint firstAttribute="bottom" secondItem="O7t-Zr-tdQ" secondAttribute="bottom" constant="20" id="BkD-VK-cBr"/>
+                                                <constraint firstItem="O7t-Zr-tdQ" firstAttribute="top" secondItem="zbk-bk-Oi5" secondAttribute="bottom" constant="20" id="er7-Cg-31S"/>
+                                                <constraint firstItem="zbk-bk-Oi5" firstAttribute="leading" secondItem="Nn9-rV-3ls" secondAttribute="leading" constant="5" id="hXa-X5-jin"/>
+                                                <constraint firstItem="O7t-Zr-tdQ" firstAttribute="leading" secondItem="Nn9-rV-3ls" secondAttribute="leading" constant="5" id="jVw-EE-yVF"/>
+                                                <constraint firstAttribute="trailing" secondItem="O7t-Zr-tdQ" secondAttribute="trailing" constant="5" id="mPt-hC-ABx"/>
+                                                <constraint firstItem="zbk-bk-Oi5" firstAttribute="top" secondItem="Nn9-rV-3ls" secondAttribute="top" constant="5" id="qcD-Z2-Nsa"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageViewCell" destination="zbk-bk-Oi5" id="mUN-Q2-Hqr"/>
+                                            <outlet property="labelCell" destination="O7t-Zr-tdQ" id="vUk-nT-oS7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Z9B-aS-Bxu" secondAttribute="bottom" id="Opo-kR-jYa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z9B-aS-Bxu" secondAttribute="trailing" id="PDq-hO-Ip3"/>
+                            <constraint firstItem="Z9B-aS-Bxu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZaS-Bi-DRM"/>
+                            <constraint firstItem="Z9B-aS-Bxu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uOD-0j-I6H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Z9B-aS-Bxu" id="lSs-xg-LUU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="appleJuice" width="442.5" height="298.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
