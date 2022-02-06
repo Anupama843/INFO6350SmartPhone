@@ -13,7 +13,10 @@ import UIKit
  4.Create outlet of tableview to the code cell the table view as "tblView"
  5.Add Protocals UITableViewDelegate, UITableViewDataSource to the class
  6.Add functions for table view numberOfRowInSection and cellForRowAt
- 7.In view did load add tblView.delegate
+ 7.In view did load add tblView.delegate = self and tblView.datasource = self
+ 8.create an array for data values
+ 9. return array.count in numberOfRowsInSections funtion
+ 10.Fill the cellForRowAt funtion
  */
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
