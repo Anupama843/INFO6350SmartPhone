@@ -26,4 +26,23 @@ Solution:
 ```
 Please clone the repo and open Xcode project file at `/Assignment2/Assignment2.xcodeproj`
 ```
+# Assignment 3
+Question: 
+```
+Make an app with two view controller embed in a navigation controller, and in first view controller put some text field and button, then when user click the button it should perform segue and prepare the data for the second view controller . The second view should show with data in a label and a button which will pop the view controller and go back
+```
+Solution: 
+```
+Please clone the repo and open Xcode project file at `/Assignment3First/Assignment3First.xcodeproj`
+```
+Question: 
+```
+Continue with last week's tableview controller, but this time use a nib file (or .xib file) to separate the UI of tableview cell from the main storyboard, and load it by `loadNibNamed`
+```
+Solution: 
+```
+Please clone the repo and open Xcode project file at `/Assignment3Second/Assignment3Second.xcodeproj`
+```
+
+
 
