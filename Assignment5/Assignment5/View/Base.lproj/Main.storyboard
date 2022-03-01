@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Stock View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="StockViewController" customModule="Assignment5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Company Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y1O-rV-yRV">
+                                <rect key="frame" x="60" y="202" width="294" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2K-Vl-G9b">
+                                <rect key="frame" x="170.5" y="296" width="73" height="30"/>
+                                <state key="normal" title="Get Rating"/>
+                                <connections>
+                                    <action selector="getRatingButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g26-oL-6zf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7I-hQ-4wy">
+                                <rect key="frame" x="20" y="398" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating Recommendation:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5JP-mA-3ks">
+                                <rect key="frame" x="20" y="442" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="y1O-rV-yRV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="0To-t4-bo8"/>
+                            <constraint firstItem="5JP-mA-3ks" firstAttribute="top" secondItem="O7I-hQ-4wy" secondAttribute="bottom" constant="20" id="9qG-51-Flp"/>
+                            <constraint firstItem="5JP-mA-3ks" firstAttribute="trailing" secondItem="O7I-hQ-4wy" secondAttribute="trailing" id="ARa-Zd-56p"/>
+                            <constraint firstItem="X2K-Vl-G9b" firstAttribute="top" secondItem="y1O-rV-yRV" secondAttribute="bottom" constant="60" id="GtS-oP-gtc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O7I-hQ-4wy" secondAttribute="trailing" constant="20" id="Q90-GV-khA"/>
+                            <constraint firstItem="O7I-hQ-4wy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Suf-cg-H6A"/>
+                            <constraint firstItem="y1O-rV-yRV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="158" id="ZSe-gM-WLe"/>
+                            <constraint firstItem="O7I-hQ-4wy" firstAttribute="top" secondItem="X2K-Vl-G9b" secondAttribute="bottom" constant="72" id="evf-Jd-tj0"/>
+                            <constraint firstItem="X2K-Vl-G9b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j4J-gc-M0d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y1O-rV-yRV" secondAttribute="trailing" constant="60" id="mu0-Rz-MSA"/>
+                            <constraint firstItem="y1O-rV-yRV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q4J-W1-hXf"/>
+                            <constraint firstItem="5JP-mA-3ks" firstAttribute="leading" secondItem="O7I-hQ-4wy" secondAttribute="leading" id="uD5-6z-bfh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="companyNameTextField" destination="y1O-rV-yRV" id="Oph-2c-DQs"/>
+                        <outlet property="ratingRecommendationLabel" destination="5JP-mA-3ks" id="0QQ-Id-L1H"/>
+                        <outlet property="ratingScoreLabel" destination="O7I-hQ-4wy" id="EcM-jb-oVK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
